@@ -1,0 +1,13 @@
+name: my first job
+
+on: [push]
+jobs:
+  runs-something:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print node version
+        run: |
+          npm -v
+          git -v
+          npm -v
+
